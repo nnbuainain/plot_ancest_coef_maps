@@ -36,10 +36,12 @@ eas <- read.csv("anc_coef/snmf_eas_amz.csv", header = TRUE,sep=";",dec=",")
 
 
 ### Load Shape files to construct map and define projection
+
+### Load Continent and countries shapefiles
 countries <- shapefile("shapes/countries.shp")
 projection(countries) <- CRS("+proj=longlat +datum=WGS84")
 
-### Load the species distribution shape which is split in 2 files
+### Load the species distribution shape which in this case is split in 2 files
 distribution <- shapefile("shapes/tunchiornis_shape_1.shp/")
 projection(distribution) <- CRS("+proj=longlat +datum=WGS84")
 distribution2 <- shapefile("shapes/tunchiornis_shape_2.shphp")
@@ -60,7 +62,7 @@ cinza<-adjustcolor("lightgray",alpha=0.6)
 plot(distribution, add=T, lwd=0.03,col=cinza)
 plot(distribution2, add=T, lwd=0.03,col=cinza)
 plot(rivers, add=T, lwd=0.03,alpha=0.06,col="gray")
-map.scale(x=-55,y=-18,ratio=FALSE,relwidth=0.10,cex=0.5)
+map.scale(x=-55,y=-15,ratio=FALSE,relwidth=0.10,cex=0.5)
 library("GISTools")
 north.arrow(xb=-40,yb=3,len=0.4,lab="N")
 detach(package:GISTools)
