@@ -1,13 +1,13 @@
 # Plot Ancestral Coefficient Maps
 > A R script to make beautiful maps with piecharts of ancestral coefficient outputs from genetic population structure analysis such as SNMf and STRUCTURE
 
-### Purpose
+## Purpose:
 Genetic population structure programs usually provide results in side by side bar plots which are somewhat nice, but sometimes hard to visualize in a spatial context. This script will plot your ancestral coefficients as piecharts using a colorblin friendly pallete in a beautiful map. This will give you a better idea of the geographic distribution of your genetic structure. 
 
 * You will end up with something like this:
 
 ![map](figures/example_map.png "example output map")
-### What do you need
+## What do you need:
 
 * An ancestral coefficient matrix in the format presented in anc_coef/snmf_1round.csv file
 
@@ -23,7 +23,7 @@ Genetic population structure programs usually provide results in side by side ba
     * raster
     * rgdal
 
-### Source
+## Source:
 
 The original data comes from a previous publication of mine where I used this script and it is accessible here:
 
